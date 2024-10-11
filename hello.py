@@ -33,9 +33,9 @@ def play_rock():
             B_win_count += 1
 
     if A_win_count > B_win_count:
-        print("最終的にAの勝ち！")
+        print("最終的にAの勝ち")
     else:
-        print("最終的にBの勝ち！")
+        print("最終的にBの勝ち")
 
 
 play_rock()
