@@ -15,6 +15,7 @@ class Schedule(models.Model):
     day = models.CharField(max_length=10, choices=DAYS_OF_WEEK)
     activity = models.CharField(max_length=100)
 
+
     def __str__(self):
         
         
