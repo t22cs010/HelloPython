@@ -1,0 +1,14 @@
+<!-- schedule/templates/schedule/add_schedule.html -->
+{% extends "base.html" %}
+
+{% block title %}予定の追加{% endblock %}
+
+{% block content %}
+<h2>予定の追加</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">追加</button>
+</form>
+<a href="{% url 'schedule_list' %}">戻る</a>
+{% endblock %}

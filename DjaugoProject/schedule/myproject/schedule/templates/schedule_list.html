@@ -1,0 +1,14 @@
+<!-- schedule/templates/schedule/schedule_list.html -->
+{% extends "base.html" %}
+
+{% block title %}スケジュール一覧{% endblock %}
+
+{% block content %}
+<h2>スケジュール一覧</h2>
+<ul>
+    {% for schedule in schedules %}
+        <li>{{ schedule.day }}: {{ schedule.activity }}</li>
+    {% endfor %}
+</ul>
+<a href="{% url 'add_schedule' %}">新しい予定を追加</a>
+{% endblock %}
