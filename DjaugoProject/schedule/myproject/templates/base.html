@@ -1,0 +1,24 @@
+<!-- templates/base.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}週間スケジュール{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>週間スケジュールアプリ</h1>
+        <nav>
+            <a href="{% url 'schedule_list' %}">スケジュール一覧</a>
+            <a href="{% url 'add_schedule' %}">新しい予定を追加</a>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <p>&copy; 2024 My Schedule App</p>
+    </footer>
+</body>
+</html>
+
